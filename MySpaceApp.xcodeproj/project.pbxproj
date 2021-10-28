@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		ED06B1FF272B504E00B96725 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ED06B1FE272B504E00B96725 /* README.md */; };
-		ED06B204272B531300B96725 /* screen3.png in Resources */ = {isa = PBXBuildFile; fileRef = ED06B201272B531300B96725 /* screen3.png */; };
-		ED06B205272B531300B96725 /* screen1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED06B202272B531300B96725 /* screen1.png */; };
-		ED06B206272B531300B96725 /* screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = ED06B203272B531300B96725 /* screen2.png */; };
-		ED06B208272B533700B96725 /* screen4.png in Resources */ = {isa = PBXBuildFile; fileRef = ED06B207272B533700B96725 /* screen4.png */; };
+		ED06B20C272B544800B96725 /* screen3.png in Resources */ = {isa = PBXBuildFile; fileRef = ED06B209272B544800B96725 /* screen3.png */; };
+		ED06B20D272B544800B96725 /* screen1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED06B20A272B544800B96725 /* screen1.png */; };
+		ED06B20E272B544800B96725 /* screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = ED06B20B272B544800B96725 /* screen2.png */; };
 		ED1C09B22728B703009F061F /* MySpaceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1C09B12728B703009F061F /* MySpaceAppApp.swift */; };
 		ED1C09B62728B707009F061F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1C09B52728B707009F061F /* Assets.xcassets */; };
 		ED1C09B92728B707009F061F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1C09B82728B707009F061F /* Preview Assets.xcassets */; };
@@ -61,10 +60,9 @@
 
 /* Begin PBXFileReference section */
 		ED06B1FE272B504E00B96725 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		ED06B201272B531300B96725 /* screen3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen3.png; sourceTree = "<group>"; };
-		ED06B202272B531300B96725 /* screen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1.png; sourceTree = "<group>"; };
-		ED06B203272B531300B96725 /* screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2.png; sourceTree = "<group>"; };
-		ED06B207272B533700B96725 /* screen4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen4.png; sourceTree = "<group>"; };
+		ED06B209272B544800B96725 /* screen3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen3.png; sourceTree = "<group>"; };
+		ED06B20A272B544800B96725 /* screen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1.png; sourceTree = "<group>"; };
+		ED06B20B272B544800B96725 /* screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2.png; sourceTree = "<group>"; };
 		ED1C09AE2728B703009F061F /* MySpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1C09B12728B703009F061F /* MySpaceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpaceAppApp.swift; sourceTree = "<group>"; };
 		ED1C09B52728B707009F061F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,10 +126,9 @@
 		ED06B200272B52B100B96725 /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
-				ED06B202272B531300B96725 /* screen1.png */,
-				ED06B203272B531300B96725 /* screen2.png */,
-				ED06B201272B531300B96725 /* screen3.png */,
-				ED06B207272B533700B96725 /* screen4.png */,
+				ED06B20A272B544800B96725 /* screen1.png */,
+				ED06B20B272B544800B96725 /* screen2.png */,
+				ED06B209272B544800B96725 /* screen3.png */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -327,17 +324,18 @@
 			files = (
 				ED1C09F6272A514A009F061F /* uranus_facts.txt in Resources */,
 				ED1C09F9272A514A009F061F /* mars_facts.txt in Resources */,
+				ED06B20C272B544800B96725 /* screen3.png in Resources */,
 				ED1C09F7272A514A009F061F /* venus_facts.txt in Resources */,
 				ED1C09D32729F08B009F061F /* venus_info.txt in Resources */,
 				ED1C09DD2729F103009F061F /* saturn_info.txt in Resources */,
 				ED1C09D92729F0BE009F061F /* mars_info.txt in Resources */,
 				ED1C0A13272A6504009F061F /* Icon-App-40x40@1x.png in Resources */,
 				ED1C09DF2729F112009F061F /* uranus_info.txt in Resources */,
-				ED06B208272B533700B96725 /* screen4.png in Resources */,
 				ED1C0A12272A6504009F061F /* Icon-App-76x76@1x.png in Resources */,
 				ED1C0A1A272A6504009F061F /* Icon-App-60x60@3x.png in Resources */,
 				ED1C0A15272A6504009F061F /* Icon-App-83.5x83.5@2x.png in Resources */,
 				ED1C09F3272A514A009F061F /* pluto_facts.txt in Resources */,
+				ED06B20D272B544800B96725 /* screen1.png in Resources */,
 				ED1C0A19272A6504009F061F /* ItunesArtwork@2x.png in Resources */,
 				ED1C09F2272A514A009F061F /* jupiter_facts.txt in Resources */,
 				ED1C09D12729EC6C009F061F /* mercury_info.txt in Resources */,
@@ -349,12 +347,11 @@
 				ED1C0A18272A6504009F061F /* Icon-App-20x20@1x.png in Resources */,
 				ED1C09C32728B771009F061F /* solar_system.json in Resources */,
 				ED1C09E12729F157009F061F /* neptune_info.txt in Resources */,
-				ED06B206272B531300B96725 /* screen2.png in Resources */,
 				ED1C09B92728B707009F061F /* Preview Assets.xcassets in Resources */,
 				ED1C0A1B272A6504009F061F /* Icon-App-20x20@3x.png in Resources */,
 				ED1C09F4272A514A009F061F /* saturn_facts.txt in Resources */,
 				ED1C09FB272A514A009F061F /* moon_facts.txt in Resources */,
-				ED06B205272B531300B96725 /* screen1.png in Resources */,
+				ED06B20E272B544800B96725 /* screen2.png in Resources */,
 				ED1C09B62728B707009F061F /* Assets.xcassets in Resources */,
 				ED1C0A10272A6504009F061F /* Icon-App-60x60@2x.png in Resources */,
 				ED1C0A1D272A6504009F061F /* Icon-App-29x29@2x.png in Resources */,
@@ -365,7 +362,6 @@
 				ED1C0A14272A6504009F061F /* Icon-App-76x76@2x.png in Resources */,
 				ED1C0A1E272A6504009F061F /* Icon-App-40x40@2x.png in Resources */,
 				ED1C09DB2729F0EA009F061F /* jupiter_info.txt in Resources */,
-				ED06B204272B531300B96725 /* screen3.png in Resources */,
 				ED1C09D72729F0AD009F061F /* moon_info.txt in Resources */,
 				ED1C09F5272A514A009F061F /* neptune_facts.txt in Resources */,
 			);
