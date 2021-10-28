@@ -120,6 +120,7 @@
 		ED1C09A52728B703009F061F = {
 			isa = PBXGroup;
 			children = (
+				ED44AFDE272B1E1200BE1C12 /* README.txt */,
 				ED1C09B02728B703009F061F /* MySpaceApp */,
 				ED1C09AF2728B703009F061F /* Products */,
 			);
@@ -144,7 +145,6 @@
 				ED1C09BA2728B707009F061F /* Info.plist */,
 				ED1C09B72728B707009F061F /* Preview Content */,
 				ED1C09CC2728D7B1009F061F /* CelestialObjectList.swift */,
-				ED44AFDE272B1E1200BE1C12 /* README.txt */,
 			);
 			path = MySpaceApp;
 			sourceTree = "<group>";
