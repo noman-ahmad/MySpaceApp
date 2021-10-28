@@ -22,11 +22,11 @@ Technologies Used: Swift, SwiftUI, Kingfisher, AVKit.
 
 Screenshots: 
 
-![scren1.png](https://github.com/noman-ahmad/MySpaceApp/blob/main/Screenshots/screen1.png?raw=true){height=25%}{width=25%}
+![scren1.png](https://github.com/noman-ahmad/MySpaceApp/blob/main/Screenshots/screen1.png?raw=true)(width=50%}
 
-![screen2.png](https://github.com/noman-ahmad/MySpaceApp/blob/main/Screenshots/screen2.png?raw=true){height=25%}{width=25%}
+![screen2.png](https://github.com/noman-ahmad/MySpaceApp/blob/main/Screenshots/screen2.png?raw=true){width=50%}
 
-![screen3.png](https://github.com/noman-ahmad/MySpaceApp/blob/main/Screenshots/screen3.png?raw=true){height=25%}{width=25%}
+![screen3.png](https://github.com/noman-ahmad/MySpaceApp/blob/main/Screenshots/screen3.png?raw=true){width=50%}
 
 External Links :
   - Official Support Page - github.com/noman-ahmad/MySpaceAppSupport
