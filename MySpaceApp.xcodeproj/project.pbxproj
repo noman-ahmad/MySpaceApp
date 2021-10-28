@@ -52,6 +52,7 @@
 		ED1C0A1C272A6504009F061F /* Icon-App-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1C0A0D272A6504009F061F /* Icon-App-29x29@3x.png */; };
 		ED1C0A1D272A6504009F061F /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1C0A0E272A6504009F061F /* Icon-App-29x29@2x.png */; };
 		ED1C0A1E272A6504009F061F /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1C0A0F272A6504009F061F /* Icon-App-40x40@2x.png */; };
+		ED44AFDF272B1E1200BE1C12 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED44AFDE272B1E1200BE1C12 /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 		ED1C0A0D272A6504009F061F /* Icon-App-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@3x.png"; sourceTree = "<group>"; };
 		ED1C0A0E272A6504009F061F /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png"; sourceTree = "<group>"; };
 		ED1C0A0F272A6504009F061F /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
+		ED44AFDE272B1E1200BE1C12 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				ED1C09BA2728B707009F061F /* Info.plist */,
 				ED1C09B72728B707009F061F /* Preview Content */,
 				ED1C09CC2728D7B1009F061F /* CelestialObjectList.swift */,
+				ED44AFDE272B1E1200BE1C12 /* README.txt */,
 			);
 			path = MySpaceApp;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				ED1C09F2272A514A009F061F /* jupiter_facts.txt in Resources */,
 				ED1C09D12729EC6C009F061F /* mercury_info.txt in Resources */,
 				ED1C0A11272A6504009F061F /* Icon-App-29x29@1x.png in Resources */,
+				ED44AFDF272B1E1200BE1C12 /* README.txt in Resources */,
 				ED1C09F8272A514A009F061F /* earth_facts.txt in Resources */,
 				ED1C0A1C272A6504009F061F /* Icon-App-29x29@3x.png in Resources */,
 				ED1C0A16272A6504009F061F /* Icon-App-40x40@3x.png in Resources */,
