@@ -20,6 +20,14 @@ Known Bugs: Some Imgaes in Image Gallery can clip out and the navigation title i
             
 Technologies Used: Swift, SwiftUI, Kingfisher, AVKit.
 
+Screenshots: 
+
+![scren1.png](https://github.com/noman-ahmad/MySpaceApp/blob/main/Screenshots/screen1.png?raw=true)
+
+![screen2.png](https://github.com/noman-ahmad/MySpaceApp/blob/main/Screenshots/screen2.png?raw=true)
+
+![screen3.png](https://github.com/noman-ahmad/MySpaceApp/blob/main/Screenshots/screen3.png?raw=true)
+
 External Links :
   - Official Support Page - github.com/noman-ahmad/MySpaceAppSupport
   - Contact : nahmad199916@gmail.com
