@@ -1,7 +1,9 @@
 MySpaceApp
 Created by Noman Ahmad
 
-Current Version : 1.0
+Current Version : 1.01 
+
+App Store Link: https://apps.apple.com/us/app/myspaceapp/id1592435365
 
 Description:  MySpaceApp is a simple ios app designed for space enthusiasts.
               With this app, you can see various information, numbers, images,
@@ -29,5 +31,6 @@ Screenshots:
 ![screen3.png](https://github.com/noman-ahmad/MySpaceApp/blob/main/Screenshots/screen3.png?raw=true)
 
 External Links :
-  - Official Support Page - github.com/noman-ahmad/MySpaceAppSupport
+  - Official Support Page - github.com/noman-ahmad/MySpaceApp (this page)
+  - App Store Link: https://apps.apple.com/us/app/myspaceapp/id1592435365
   - Contact : nahmad199916@gmail.com
