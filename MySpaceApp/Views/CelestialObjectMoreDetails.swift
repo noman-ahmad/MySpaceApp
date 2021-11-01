@@ -20,10 +20,12 @@ struct CelestialObjectMoreDetails: View {
                         Text("In-Depth Look at \(current_celestial_body.name)").fontWeight(.bold).font(.headline)
                         Spacer()
                     }
-                    HStack{
-                        Spacer()
-                        VideoPlayer(player: AVPlayer(url: URL(string: current_celestial_body.video_link)!)).frame(width: 400, height: 200)
-                        Spacer()
+                    if(current_celestial_body.video_link != "" ) {
+                        HStack{
+                            Spacer()
+                            VideoPlayer(player: AVPlayer(url: URL(string: current_celestial_body.video_link)!)).frame(width: 400, height: 200)
+                            Spacer()
+                        }
                     }
                 }
                 VStack(alignment: .leading, spacing: 10) {
@@ -48,25 +50,27 @@ struct CelestialObjectMoreDetails: View {
                             Text("\(current_celestial_body.gravity, specifier: "%.2f") m/s^2").font(.subheadline)
                             Spacer()
                         }
-                        HStack(alignment: .top) {
-                            Text("Distance from Sun:").fontWeight(.bold).font(.subheadline)
-                            Text("\(current_celestial_body.distance_from_sun, specifier: "%.2f") x 10^\(current_celestial_body.distance_from_sun_offset) km").font(.subheadline)
-                            Spacer()
-                        }
-                        HStack(alignment: .top) {
-                            Text("Perihelion:").fontWeight(.bold).font(.subheadline)
-                            Text("\(current_celestial_body.perihelion, specifier: "%.2f") x 10^\(current_celestial_body.perihelion_offset) km").font(.subheadline)
-                            Spacer()
-                        }
-                        HStack(alignment: .top) {
-                            Text("Aphelion:").fontWeight(.bold).font(.subheadline)
-                            Text("\(current_celestial_body.aphelion, specifier: "%.2f") x 10^\(current_celestial_body.aphelion_offset) km").font(.subheadline)
-                            Spacer()
-                        }
-                        HStack(alignment: .top) {
-                            Text("Length of Day:").fontWeight(.bold).font(.subheadline)
-                            Text("\(current_celestial_body.length_of_day, specifier: "%.1f") hours").font(.subheadline)
-                            Spacer()
+                        if(current_celestial_body.type != "Star" ) {
+                            HStack(alignment: .top) {
+                                Text("Distance from Star:").fontWeight(.bold).font(.subheadline)
+                                Text("\(current_celestial_body.distance_from_sun, specifier: "%.2f") x 10^\(current_celestial_body.distance_from_sun_offset) km").font(.subheadline)
+                                Spacer()
+                            }
+                            HStack(alignment: .top) {
+                                Text("Perihelion:").fontWeight(.bold).font(.subheadline)
+                                Text("\(current_celestial_body.perihelion, specifier: "%.2f") x 10^\(current_celestial_body.perihelion_offset) km").font(.subheadline)
+                                Spacer()
+                            }
+                            HStack(alignment: .top) {
+                                Text("Aphelion:").fontWeight(.bold).font(.subheadline)
+                                Text("\(current_celestial_body.aphelion, specifier: "%.2f") x 10^\(current_celestial_body.aphelion_offset) km").font(.subheadline)
+                                Spacer()
+                            }
+                            HStack(alignment: .top) {
+                                Text("Length of Day:").fontWeight(.bold).font(.subheadline)
+                                Text("\(current_celestial_body.length_of_day, specifier: "%.1f") hours").font(.subheadline)
+                                Spacer()
+                            }
                         }
                         HStack(alignment: .top) {
                             Text("Orbital Period:").fontWeight(.bold).font(.subheadline)
@@ -108,20 +112,24 @@ struct CelestialObjectMoreDetails: View {
                             KFImage(URL(string: current_celestial_body.image_1)!).resizable().aspectRatio(contentMode: .fit).frame(width:150, height: 150)
                             KFImage(URL(string: current_celestial_body.image_2)!).resizable().aspectRatio(contentMode: .fit).frame(width:150, height: 150)
                             KFImage(URL(string: current_celestial_body.image_3)!).resizable().aspectRatio(contentMode: .fit).frame(width:150, height: 150)
-                            KFImage(URL(string: current_celestial_body.image_4)!).resizable().aspectRatio(contentMode: .fit).frame(width:150, height: 150)
-                            KFImage(URL(string: current_celestial_body.image_5)!).resizable().aspectRatio(contentMode: .fit).frame(width:150, height: 150)
-                            KFImage(URL(string: current_celestial_body.image_6)!).resizable().aspectRatio(contentMode: .fit).frame(width:150, height: 150)
+                            if(current_celestial_body.image_4 != "") {
+                                KFImage(URL(string: current_celestial_body.image_4)!).resizable().aspectRatio(contentMode: .fit).frame(width:150, height: 150)
+                                KFImage(URL(string: current_celestial_body.image_5)!).resizable().aspectRatio(contentMode: .fit).frame(width:150, height: 150)
+                                KFImage(URL(string: current_celestial_body.image_6)!).resizable().aspectRatio(contentMode: .fit).frame(width:150, height: 150)
+                            }
                         }.padding(.all)
 
                     }
                 }.padding(.all)
             }.padding(.all)
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationBarTitle(current_celestial_body.name)
         }
     }
 }
 
 struct CelestialObjectMoreDetails_Previews: PreviewProvider {
     static var previews: some View {
-        CelestialObjectMoreDetails(current_celestial_body: localData!.solar_system[2])
+        CelestialObjectMoreDetails(current_celestial_body: localData!.universe[0].star_system[0])
     }
 }

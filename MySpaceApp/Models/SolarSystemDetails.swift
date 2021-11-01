@@ -7,9 +7,15 @@
 
 import Foundation
 
+struct Universe: Decodable {
+    let universe: [StarSystem]
+}
 
-struct SolarSystem: Decodable {
-    let solar_system : [CelestialObject]
+
+struct StarSystem: Decodable {
+    let name : String
+    let star_system : [CelestialObject]
+    let image: String
 }
 
 struct CelestialObject: Decodable {
@@ -71,9 +77,9 @@ private func readLocalFile(forName name: String) -> Data? {
     return nil
 }
 
-private func parseData(jsonData: Data) -> SolarSystem? {
+private func parseData(jsonData: Data) -> Universe? {
     do {
-        let decodedData = try JSONDecoder().decode(SolarSystem.self, from: jsonData)
+        let decodedData = try JSONDecoder().decode(Universe.self, from: jsonData)
         print(decodedData)
         return decodedData;
     } catch {

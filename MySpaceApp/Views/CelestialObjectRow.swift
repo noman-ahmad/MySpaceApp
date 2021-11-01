@@ -23,6 +23,6 @@ struct CelestialObjectRow: View {
 
 struct CelestialObjectRow_Previews: PreviewProvider {
     static var previews: some View {
-        CelestialObjectRow(celestial_object: (localData!.solar_system[3]))
+        CelestialObjectRow(celestial_object: (localData!.universe[1].star_system[0]))
     }
 }

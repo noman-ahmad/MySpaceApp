@@ -56,6 +56,12 @@
 		ED1C0A1C272A6504009F061F /* Icon-App-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1C0A0D272A6504009F061F /* Icon-App-29x29@3x.png */; };
 		ED1C0A1D272A6504009F061F /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1C0A0E272A6504009F061F /* Icon-App-29x29@2x.png */; };
 		ED1C0A1E272A6504009F061F /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1C0A0F272A6504009F061F /* Icon-App-40x40@2x.png */; };
+		ED436EF2272F650000904CED /* StarSystemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED436EF1272F650000904CED /* StarSystemList.swift */; };
+		ED436EF4272F651700904CED /* StarSystemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED436EF3272F651700904CED /* StarSystemRow.swift */; };
+		ED436EF6272F769E00904CED /* alpha_centauri_a_info.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED436EF5272F769E00904CED /* alpha_centauri_a_info.txt */; };
+		ED436EF8272F771100904CED /* alpha_centauri_a_facts.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED436EF7272F771100904CED /* alpha_centauri_a_facts.txt */; };
+		EDFD788F272F562400FB8534 /* sun_info.txt in Resources */ = {isa = PBXBuildFile; fileRef = EDFD788E272F562400FB8534 /* sun_info.txt */; };
+		EDFD7891272F56F400FB8534 /* sun_facts.txt in Resources */ = {isa = PBXBuildFile; fileRef = EDFD7890272F56F400FB8534 /* sun_facts.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +115,12 @@
 		ED1C0A0D272A6504009F061F /* Icon-App-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@3x.png"; sourceTree = "<group>"; };
 		ED1C0A0E272A6504009F061F /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png"; sourceTree = "<group>"; };
 		ED1C0A0F272A6504009F061F /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
+		ED436EF1272F650000904CED /* StarSystemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarSystemList.swift; sourceTree = "<group>"; };
+		ED436EF3272F651700904CED /* StarSystemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarSystemRow.swift; sourceTree = "<group>"; };
+		ED436EF5272F769E00904CED /* alpha_centauri_a_info.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = alpha_centauri_a_info.txt; sourceTree = "<group>"; };
+		ED436EF7272F771100904CED /* alpha_centauri_a_facts.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = alpha_centauri_a_facts.txt; sourceTree = "<group>"; };
+		EDFD788E272F562400FB8534 /* sun_info.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sun_info.txt; sourceTree = "<group>"; };
+		EDFD7890272F56F400FB8534 /* sun_facts.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sun_facts.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,14 +166,13 @@
 		ED1C09B02728B703009F061F /* MySpaceApp */ = {
 			isa = PBXGroup;
 			children = (
-				ED1C09C62728C076009F061F /* Supporting Views */,
+				ED1C09C62728C076009F061F /* Views */,
 				ED1C09C12728B723009F061F /* Models */,
 				ED1C09C02728B716009F061F /* Resources */,
 				ED1C09B12728B703009F061F /* MySpaceAppApp.swift */,
 				ED1C09B52728B707009F061F /* Assets.xcassets */,
 				ED1C09BA2728B707009F061F /* Info.plist */,
 				ED1C09B72728B707009F061F /* Preview Content */,
-				ED1C09CC2728D7B1009F061F /* CelestialObjectList.swift */,
 			);
 			path = MySpaceApp;
 			sourceTree = "<group>";
@@ -193,14 +204,17 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		ED1C09C62728C076009F061F /* Supporting Views */ = {
+		ED1C09C62728C076009F061F /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				ED1C09C72728C0BF009F061F /* CelestialObjectRow.swift */,
 				ED1C09CE2728DF0E009F061F /* CelestialObjectDetail.swift */,
 				ED1C09E5272A160F009F061F /* CelestialObjectMoreDetails.swift */,
+				ED1C09CC2728D7B1009F061F /* CelestialObjectList.swift */,
+				ED436EF1272F650000904CED /* StarSystemList.swift */,
+				ED436EF3272F651700904CED /* StarSystemRow.swift */,
 			);
-			path = "Supporting Views";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		ED1C09E42729F61E009F061F /* Info */ = {
@@ -216,6 +230,8 @@
 				ED1C09DE2729F112009F061F /* uranus_info.txt */,
 				ED1C09E02729F157009F061F /* neptune_info.txt */,
 				ED1C09E22729F163009F061F /* pluto_info.txt */,
+				EDFD788E272F562400FB8534 /* sun_info.txt */,
+				ED436EF5272F769E00904CED /* alpha_centauri_a_info.txt */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -233,6 +249,8 @@
 				ED1C09EA272A5149009F061F /* saturn_facts.txt */,
 				ED1C09EC272A5149009F061F /* uranus_facts.txt */,
 				ED1C09ED272A5149009F061F /* venus_facts.txt */,
+				EDFD7890272F56F400FB8534 /* sun_facts.txt */,
+				ED436EF7272F771100904CED /* alpha_centauri_a_facts.txt */,
 			);
 			path = Facts;
 			sourceTree = "<group>";
@@ -351,9 +369,11 @@
 				ED1C0A1B272A6504009F061F /* Icon-App-20x20@3x.png in Resources */,
 				ED1C09F4272A514A009F061F /* saturn_facts.txt in Resources */,
 				ED1C09FB272A514A009F061F /* moon_facts.txt in Resources */,
+				EDFD788F272F562400FB8534 /* sun_info.txt in Resources */,
 				ED06B20E272B544800B96725 /* screen2.png in Resources */,
 				ED1C09B62728B707009F061F /* Assets.xcassets in Resources */,
 				ED1C0A10272A6504009F061F /* Icon-App-60x60@2x.png in Resources */,
+				ED436EF6272F769E00904CED /* alpha_centauri_a_info.txt in Resources */,
 				ED1C0A1D272A6504009F061F /* Icon-App-29x29@2x.png in Resources */,
 				ED06B1FF272B504E00B96725 /* README.md in Resources */,
 				ED1C09D52729F09B009F061F /* earth_info.txt in Resources */,
@@ -362,6 +382,8 @@
 				ED1C0A14272A6504009F061F /* Icon-App-76x76@2x.png in Resources */,
 				ED1C0A1E272A6504009F061F /* Icon-App-40x40@2x.png in Resources */,
 				ED1C09DB2729F0EA009F061F /* jupiter_info.txt in Resources */,
+				ED436EF8272F771100904CED /* alpha_centauri_a_facts.txt in Resources */,
+				EDFD7891272F56F400FB8534 /* sun_facts.txt in Resources */,
 				ED1C09D72729F0AD009F061F /* moon_info.txt in Resources */,
 				ED1C09F5272A514A009F061F /* neptune_facts.txt in Resources */,
 			);
@@ -378,6 +400,8 @@
 				ED1C09CF2728DF0E009F061F /* CelestialObjectDetail.swift in Sources */,
 				ED1C09C82728C0BF009F061F /* CelestialObjectRow.swift in Sources */,
 				ED1C09CD2728D7B1009F061F /* CelestialObjectList.swift in Sources */,
+				ED436EF2272F650000904CED /* StarSystemList.swift in Sources */,
+				ED436EF4272F651700904CED /* StarSystemRow.swift in Sources */,
 				ED1C09C52728B7A5009F061F /* SolarSystemDetails.swift in Sources */,
 				ED1C09B22728B703009F061F /* MySpaceAppApp.swift in Sources */,
 			);
@@ -512,11 +536,12 @@
 				DEVELOPMENT_TEAM = K6ATTQCYHQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MySpaceApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.01;
 				PRODUCT_BUNDLE_IDENTIFIER = nahmad.MySpaceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -534,11 +559,12 @@
 				DEVELOPMENT_TEAM = K6ATTQCYHQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MySpaceApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.01;
 				PRODUCT_BUNDLE_IDENTIFIER = nahmad.MySpaceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

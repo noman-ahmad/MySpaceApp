@@ -48,9 +48,10 @@ struct CelestialObjectDetail: View {
                         Spacer()
                     }
                     HStack(alignment: .top) {
-                        Text("Discovered By:").fontWeight(.bold).font(.subheadline).allowsTightening(true).lineLimit(1).minimumScaleFactor(0.5)
+                        Text("Discovered By: ").fontWeight(.bold).font(.subheadline).allowsTightening(true).lineLimit(1).minimumScaleFactor(0.5)
+                        Text("\(current_celestial_object.discovered_by)").font(.subheadline)
     //                    Text("[\(current_celestial_object.discovered_by)](https://example.com)").font(.subheadline)
-                        Link("\(current_celestial_object.discovered_by)", destination: URL(string: current_celestial_object.discovered_by_link)!).font(.subheadline)
+//                        Link("\(current_celestial_object.discovered_by)", destination: URL(string: current_celestial_object.discovered_by_link)!).font(.subheadline)
                         Spacer()
                     }
                     HStack(alignment: .top) {
@@ -58,10 +59,12 @@ struct CelestialObjectDetail: View {
                         Text("\(current_celestial_object.mass, specifier: "%.2f") x 10^\(current_celestial_object.mass_offset) kg").font(.subheadline)
                         Spacer()
                     }
-                    HStack(alignment: .top) {
-                        Text("Distance from Sun:").fontWeight(.bold).font(.subheadline)
-                        Text("\(current_celestial_object.distance_from_sun, specifier: "%.2f") x 10^\(current_celestial_object.distance_from_sun_offset) km").font(.subheadline)
-                        Spacer()
+                    if (current_celestial_object.type != "Star") {
+                        HStack(alignment: .top) {
+                            Text("Distance from Star:").fontWeight(.bold).font(.subheadline)
+                            Text("\(current_celestial_object.distance_from_sun, specifier: "%.2f") x 10^\(current_celestial_object.distance_from_sun_offset) km").font(.subheadline)
+                            Spacer()
+                        }
                     }
                     HStack(alignment: .top) {
                         Text("Description:").fontWeight(.bold).font(.subheadline)
@@ -76,12 +79,12 @@ struct CelestialObjectDetail: View {
                         }
                         Spacer()
                     }
-                    HStack(alignment: .top) {
-                        Text("External Links:").fontWeight(.bold).font(.subheadline)
-                        Link("NASA", destination: URL(string: current_celestial_object.nasa_link)!)
-                        Link("Wiki", destination: URL(string: current_celestial_object.wiki_link)!)
-                        Spacer()
-                    }
+//                    HStack(alignment: .top) {
+//                        Text("External Links:").fontWeight(.bold).font(.subheadline)
+//                        Link("NASA", destination: URL(string: current_celestial_object.nasa_link)!)
+//                        Link("Wiki", destination: URL(string: current_celestial_object.wiki_link)!)
+//                        Spacer()
+//                    }
                     
                     
                     
@@ -90,14 +93,15 @@ struct CelestialObjectDetail: View {
                 
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarTitle(current_celestial_object.name)
             
-        
     }
         
 }
 
 struct CelestialObjectDetail_Previews: PreviewProvider {
     static var previews: some View {
-        CelestialObjectDetail(current_celestial_object: localData!.solar_system[2])
+        CelestialObjectDetail(current_celestial_object: localData!.universe[0].star_system[0])
     }
 }

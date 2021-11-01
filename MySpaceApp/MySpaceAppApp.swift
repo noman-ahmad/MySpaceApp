@@ -11,7 +11,7 @@ import SwiftUI
 struct MySpaceAppApp: App {
     var body: some Scene {
         WindowGroup {
-            CelestialObjectList()
+            StarSystemList(universe: localData!)
         }
     }
 }
