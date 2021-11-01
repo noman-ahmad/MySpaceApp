@@ -13,15 +13,18 @@ struct CelestialObjectList: View {
     var current_star_system : StarSystem
     
     var body: some View {
-            List(searchResults, id: \.distance_from_sun) {
-                objects in
-                NavigationLink(destination: CelestialObjectDetail(current_celestial_object: objects)) {
-                    CelestialObjectRow(celestial_object: objects)
+        List {
+                
+                ForEach(searchResults, id: \.distance_from_sun) {
+                    celestial_objects in
+                    NavigationLink(destination: CelestialObjectDetail(current_celestial_object: celestial_objects)) {
+                        CelestialObjectRow(celestial_object: celestial_objects)
+                    }
                 }
-                .searchable(text: $searchText)
-                .navigationBarTitleDisplayMode(.inline)
-                .navigationBarTitle(current_star_system.name)
             }
+            .searchable(text: $searchText)
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitle(current_star_system.name)
 
     }
     
@@ -30,11 +33,7 @@ struct CelestialObjectList: View {
             return current_star_system.star_system
         } else {
             let results = current_star_system.star_system.filter {$0.name.contains(searchText) || $0.type.contains(searchText)}
-            if results.count != 0 {
-                return results
-            } else {
-                return current_star_system.star_system
-            }
+            return results
         }
     }
 }

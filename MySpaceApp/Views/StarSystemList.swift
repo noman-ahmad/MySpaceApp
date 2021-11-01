@@ -14,16 +14,17 @@ struct StarSystemList: View {
     
     var body: some View {
         NavigationView {
-            List(searchResults, id: \.name) {
-                objects in
-                NavigationLink(destination: CelestialObjectList(current_star_system: objects)) {
-                    StarSystemRow(star_system: objects)
+            List {
+                ForEach(searchResults, id: \.name) {
+                    star_system in
+                    NavigationLink(destination: CelestialObjectList(current_star_system: star_system)) {
+                        StarSystemRow(star_system: star_system)
+                    }
                 }
-                .searchable(text: $searchText)
-                .navigationBarTitleDisplayMode(.inline)
-                .navigationBarTitle("Star Systems")
             }
-            
+            .searchable(text: $searchText)
+            .navigationBarTitleDisplayMode(.automatic)
+            .navigationBarTitle("Star Systems")
         }
     }
     
@@ -35,11 +36,7 @@ struct StarSystemList: View {
             return localData!.universe
         } else {
             let results = localData!.universe.filter {$0.name.contains(searchText)}
-            if results.count != 0 {
-                return results
-            } else {
-                return localData!.universe
-            }
+            return results
         }
     }
 }
