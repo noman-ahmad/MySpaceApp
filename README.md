@@ -11,10 +11,10 @@ Description:  MySpaceApp is a simple ios app designed for space enthusiasts.
               such as Earth and the Moon.
              
 Pre-Requisites: A Mac Computer with XCode, and an iPhone/iPad Device or simulator
-                running atleast iOS 14.0.
+                running atleast iOS 15.0.
                 
              
-Instructions: Build and Run to any ios device/simulator with iOS 14+
+Instructions: Build and Run to any ios device/simulator with iOS 15+
               using XCode (specific version might be required).
 
 Known Bugs: Some Imgaes in Image Gallery can clip out and the navigation title in some
